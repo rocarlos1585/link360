@@ -1,0 +1,58 @@
+.dragDropMainContainer{
+    display: flex;
+}
+
+
+.dragDropArea{
+    width: 100%;
+    min-height: 350px;
+    background-color: white;
+    color:#008959;
+    font-weight: bold;
+
+    padding: 1%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+}
+
+.dragDropArea p {
+    width: 40vw;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .dragDropArea:hover{
+
+    background-color:#008959;
+    color:white;
+    cursor: pointer;
+}
+
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .imageItem {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .imageItem img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }

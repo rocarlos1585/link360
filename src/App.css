@@ -1,42 +1,144 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.mainContainer{
+  display: flex;
+}
+
+
+
+.input-with-label-above {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  margin-bottom: 2vh;
+
+  }
+  
+  .input-with-label-above label {
+    color:#008959;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1vh;
+    padding-left: 0.5rem;
+
+  }
+  
+  .input-with-label-above input {
+    border-radius: 20px;
+    width: 100%;
+    height: 6vh;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+    border: none;
+    color:#008959;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+  }
+
+
+.formFileAndNumber{
+  width: 50%;
+  padding: 1vh;
+}
+
+.buttonUploadFile{
+  background-color: white;
+  color:#008959;
+	border-radius: 7px;
+  width: 100%;
+	height: 10vh;
+  margin-bottom: 2vh;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+  cursor:pointer
+}
+
+.buttonUploadFile p{
+  color:#242424;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.0rem;
+}
+
+#iconAdd{
+  color:#008959;
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+.formFileUploaded{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  width: 50%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.formFileUploaded p{
+  color:#008959;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.0rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.buttonSendFile{
+  background-color: #008959;
+  color:white;
+	border-radius: 50px;
+  width: 50%;
+	height: 8vh;
+  margin-bottom: 1.5vh;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.61);
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+  cursor:pointer
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.buttonSendFile p{
+  color:white;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.0rem;
 }
 
-.card {
-  padding: 2em;
+#iconSend{
+  color:white;
+  font-size: 2rem;
+  margin-left: 5px;
 }
 
-.read-the-docs {
-  color: #888;
+.buttonRestartUpload{
+  border:2px solid #008959;
+  color:#242424;
+	border-radius: 50px;
+  width: 50%;
+	height: 8vh;
+  margin-bottom: 1.5vh;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttonRestartUpload p{
+  color:#242424;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.0rem;
 }
